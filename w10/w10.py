@@ -227,11 +227,9 @@ def plot_anim(pos):
 
 
 if __name__ == "__main__":
-    # m.npz 의 경로를 다음과 같이 수정해야 읽혀져서 해당 부분 수정했습니다.
-    # 무슨 영문에서인지 './m.npz' 으로 설정해도 읽히지 않습니다..
     # print(os.path.abspath("."))
     # rot = np.load('./m.npz')['rot']
-    rot = np.load('univ_lecture/knu23_CG/m.npz')['rot']
+    rot = np.load('2023-1_Graphics/w10/m.npz')['rot']
     print(rot.shape)
 
     qo = np.reshape(rot[0][..., :31*4], [31, 4])
